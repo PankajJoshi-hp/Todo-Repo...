@@ -1,0 +1,12 @@
+.custom-width {
+  width: 700px;
+}
+
+.scrollable-div {
+  height: auto;
+  max-height: 200px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* overflow-y: auto; */
+  /* scroll-behavior: smooth; */
+}
