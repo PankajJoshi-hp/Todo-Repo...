@@ -41,8 +41,10 @@ const App = () => {
   const [newTask, setNewtask] = useState("");
 
   return (
-    <div>
-      <h3>To-Do Apk</h3>
+    <div className="main-div d-flex flex-column align-items-center p-4 max-w-[800px] mx-auto ">
+      <h3 className="text-light">
+        <span style={{ color: "#E4E4E4", font: "bold" }}>To-Do List</span>
+      </h3>
       {/* <InputBox todoTasks={todoTasks} /> */}
       <ToDoList
         taskTodo={task}

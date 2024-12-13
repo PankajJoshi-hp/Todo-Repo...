@@ -4,9 +4,7 @@
 }
 
 body {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 20vh;
+  background-color: #374151;
+  /* opacity: 0.2; */
 }
