@@ -1,12 +1,83 @@
+/* .main-div {
+  width: 80%;
+} */
+
 .custom-width {
+  background-color: #1f2937;
   width: 700px;
 }
 
 .scrollable-div {
   height: auto;
-  max-height: 200px;
+  max-height: 300px;
   overflow-y: scroll;
   scrollbar-width: none;
+  border-top: 1px solid #e4e4e4;
   /* overflow-y: auto; */
   /* scroll-behavior: smooth; */
+}
+
+button,
+input:focus {
+  outline: none;
+}
+
+.add-button {
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.add-button:hover {
+  transform: scale(1.03);
+}
+
+.delete-btn:hover {
+  transform: scale(1.02);
+}
+
+.add-img,
+.delete-img {
+  width: 18px;
+}
+
+.add-div {
+  flex-grow: 1;
+  gap: 3px;
+}
+
+@media screen and (max-width: 800px) {
+  .custom-width {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .custom-width {
+    width: 500px;
+  }
+
+  .input-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .filter-field {
+    width: 400px;
+  }
+
+  .add-div {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .custom-width {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .custom-width {
+    width: 250px;
+  }
 }
